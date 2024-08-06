@@ -1,0 +1,239 @@
+@font-face {
+    font-family: xspace;
+    src: local("xspace-xspace-400.ttf"), url("../Fonts/xspace-xspace-400.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+.HomeWrapper {
+    width: 100vw;
+    height: 100vh;
+    /* justify-content: center;
+    text-align: center;
+    bottom: 0;
+    position: static; */
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* scroll-snap-type: y proximity; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* .WholePage {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+} */
+
+.Home {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.Address{
+    bottom: 0px;
+    position: static; 
+    width: 100%;
+}
+
+.InvisButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    text-decoration: none;
+}
+
+.ClickhereLinkDark:hover, .ClickhereLinkLight:hover {
+    cursor: pointer;
+}
+
+.ClickhereLinkLight, .ClickhereLinkDark:hover {
+    color: #00D7D7;
+}
+
+.ClickhereLinkDark, .ClickhereLinkLight:hover {
+    color: #005656;
+}
+
+.ClickhereLinkDark, .ClickhereLinkLight {
+    transition: color 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.ContentPicture {
+    /* width: 100%; */
+    max-width: 50vw;
+    max-height: 60vh;
+}
+
+@media screen and (min-width: 975px) {
+    .ContentPicture {
+        /* width: 100%; */
+        max-width: 40vw;
+        max-height: 60vh;
+    }
+
+    .ContentPictureLandscape {
+        width: 35vw;
+        height: 26.5vw;
+    }
+
+    .SidebysideContent {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .Emptyspace {
+        display: none;
+    }
+
+    .PictureButton {
+        display: block;
+    }
+
+    .EventsBox {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .HomeEventsPic {
+        width: 45vh;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 975px) and (min-width: 675px) {
+    .ContentPicture {
+        /* width: 100%; */
+        max-width: 40vw;
+        max-height: 60vh;
+    }
+
+    .ContentPictureLandscape {
+        width: 35vw;
+        height: 26.5vw;
+    }
+
+    .SidebysideContent {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .Emptyspace {
+        display: none;
+    }
+
+    /* .PictureBox {
+        min-height: 30vh;
+    } */
+
+    .PictureButton {
+        display: none;
+    }
+
+    .EventsBox {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        gap: 1vmax;
+        justify-content: space-evenly;
+    }
+
+    .HomeEventsPic {
+        width: 50vh;
+        height: auto;
+        max-height: 35vh;
+        max-width: 40vw;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .ContentPicture {
+        /* width: 100%; */
+        max-width: 75vw;
+        max-height: 40vh;
+    }
+
+    .ContentPictureLandscape {
+        width: 70vw;
+        height: 45vw;
+    }
+
+    .SidebysideContent {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .Emptyspace {
+        display: block;
+        height: 3vh;
+    }
+
+    .PictureBox {
+        min-height: 30vh;
+    }
+
+    .PictureButton {
+        display: none;
+    }
+
+    .EventsBox {
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        gap: 2vmax;
+        justify-content: space-evenly;
+    }
+
+    .HomeEventsPic {
+        width: auto;
+        height: auto;
+        max-height: 35vh;
+        max-width: 40vw;
+    }
+
+    .projFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .EventsPair {
+        flex-direction: row;
+        -ms-flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .EventsPair {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+}
+.HomeWholePage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projFlex{
+    display: flex;
+    gap: 50px;
+    justify-content:center;
+    /* margin: 0 auto; */
+    max-width: 1000px;
+}
+.eventsimage-boxx{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

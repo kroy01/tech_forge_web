@@ -1,0 +1,11 @@
+.lc-border-property{
+    /* background-color: aliceblue; */
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+    width: 1200px;
+    height: 600px;
+    margin-bottom: 50px;
+    /* margin-top: 30px; */
+    margin-left: 20px;
+}

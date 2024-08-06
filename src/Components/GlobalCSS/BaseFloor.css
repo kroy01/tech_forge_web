@@ -1,0 +1,74 @@
+#TitleContainer {
+    padding-top: 8.75vmin;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+#TitleText {
+    width: auto;
+    height: min-content;
+    font-size: 8.75vmin;
+    font-family: "xspace";
+}
+
+.PictureBox {
+    padding-bottom: 0vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1201px) {
+    .PictureBox {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        align-items: end;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1200px) {
+    .PictureBox {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: end;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .PictureBox {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+.PageWrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    scroll-snap-type: y proximity;
+}
+
+.WholePage {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+}
+
+.BasePage{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* marginTop: '2vw', display: 'flex', flexDirection: 'column', msFlexDirection: 'column', justifyContent: 'space-between', WebkitJustifyContent: 'space-between', alignItems: 'center', WebkitAlignItems: 'center' */
+}

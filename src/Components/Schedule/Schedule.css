@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+/* #TitleContainer {
+    padding-top: 8.75vmin;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+} */
+
+/* #TitleText {
+    width: auto;
+    height: min-content;
+    font-size: 8.75vmin;
+    font-family: "xspace";
+} */
+
+.ProjectsWrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* scroll-snap-type: y proximity; */
+}
+
+.ProjectsBody {
+
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    position: static;
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* scroll-snap-type: y proximity; */
+
+}
+
+.SeeMoreButton:hover {
+    cursor: pointer;
+    color: #006060;
+}
+
+@media screen and (min-width: 1201px) {
+    .PictureBox {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        align-items: end;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1200px) {
+    .ProjectsDetailsBox {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .PictureBox {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .ProjectsDetailsBox {
+        display: flex;
+        flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .PictureBox {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #TurnRocketImage {
+        display: block;
+    }
+
+    #RocketImage {
+        display: none;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #TurnRocketImage {
+        display: none;
+    }
+
+    #RocketImage {
+        display: block;
+    }
+}
+
+/* .ProjectsWholePage {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    gap: 30px;
+} */
+.ProjectsWholePage {
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* .PictureBox {
+    padding-bottom: 0vh;
+    width: 100vw;
+    display: flex;
+} */

@@ -1,0 +1,29 @@
+.imagebox-box{
+    display: flex;
+    height: auto;
+    width: 25%;
+    aspect-ratio: 1/1;
+    align-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagebox-box:hover{
+    transform: scale(1.1);
+}
+
+.imagebox-background{
+    border: 2px solid #008080;
+    border-radius: 10px;
+    background: linear-gradient(#008080, #00808090);
+}
+.imagebox-property{
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 426px){
+    .imagebox-box{
+        width: 60%;
+    }
+}

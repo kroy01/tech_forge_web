@@ -1,0 +1,22 @@
+.TimelineWrapper {
+    display: block;
+    width: 100vw;
+    /* height: 500vh; */
+    overflow-x: hidden;
+    overflow-y: visible;
+    justify-content: center;
+    text-align: center;
+}
+
+.TimelineWrapper {
+
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    position: static;
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* scroll-snap-type: y proximity; */
+}

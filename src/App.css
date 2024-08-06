@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #000505;
+}
+
+@font-face {
+    font-family: "aquire";
+    src: local("Aquire-BW0ox") url("./Components/Fonts/Aquire-BW0ox.otf") format("opentype");
+}
+
+.body {
+    overflow: hidden;
+}
+
+p {
+    font-family: "aquire";
+    text-align: justify;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.Picture {
+    border-style: solid;
+    border-width: 0.1875rem;
+    border-color: #008080;
+    border-radius: 1rem;
+}
+
+.PictureCapt {
+    border-style: solid;
+    border-width: 0.1875rem;
+    border-color: #008080;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.LinkImg {
+    scale: 1;
+    transition: scale 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.LinkImg:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.Textlink {
+    transition: color 0.4s ease-in-out;
+    color: aliceblue;
+}
+
+.Textlink:hover {
+    color: #056060;
+}
+
+.mainpg {
+    background-color: #6a6a6a;
+    /* background-color: #00a7a7; */
+    background-blend-mode: overlay;
+    /* overflow-x: hidden; */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-position: right bottom;
+    -webkit-background-position: right bottom;
+    -moz-background-position: right bottom;
+    -o-background-position: right bottom;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+@keyframes toggleMoveright {
+    0% {
+        transform: translateX(-0.15vw);
+    }
+
+    100% {
+        transform: translateX(2.5vw);
+    }
+}
+
+@keyframes toggleMoveleft {
+    0% {
+        transform: translateX(2.5vw);
+    }
+
+    100% {
+        transform: translateX(-0.15vw);
+    }
+}
+
+.toggleButtontrue {
+    animation-name: toggleMoveright;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -o-animation-name: toggleMoveright;
+    -o-animation-duration: 1s;
+    -o-animation-fill-mode: forwards;
+    -moz-animation-name: toggleMoveright;
+    -moz-animation-duration: 1s;
+    -webkit-animation-name: toggleMoveright;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.toggleButtonfalse {
+    animation-name: toggleMoveleft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -o-animation-name: toggleMoveleft;
+    -o-animation-duration: 1s;
+    -o-animation-fill-mode: forwards;
+    -moz-animation-name: toggleMoveleft;
+    -moz-animation-duration: 1s;
+    -webkit-animation-name: toggleMoveleft;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+}

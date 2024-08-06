@@ -1,0 +1,19 @@
+.image-property{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; 
+    max-width: 200px;
+}
+
+.image-type{
+    /* border: 2px solid #008080;
+    border-radius: 10px; */
+}
+
+@media screen and (max-width: 679px){
+    .image-property{
+        width: 90%;
+    }
+    
+}
